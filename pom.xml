@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.jayway</groupId>
-    <artifactId>git-build-number</artifactId>
+    <artifactId>git-build-number-sandeep</artifactId>
     <version>0.1-SNAPSHOT</version>
     <packaging>war</packaging>
 
@@ -19,9 +19,9 @@
     </developers>
 
     <scm>
-        <url>https://github.com/matsev/git-build-number</url>
-        <connection>scm:git:git://github.com/matsev/git-build-number.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com:matsev/git-build-number.git</developerConnection>
+        <url>https://github.com/sandeeppant/git-build-number-sandeep</url>
+        <connection>scm:git:git://github.com/sandeeppant/git-build-number-sandeep.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/sandeeppant/git-build-number-sandeep.git</developerConnection>
     </scm>
 
     <properties>
@@ -92,7 +92,7 @@
                         </manifest>
                         <manifestEntries>
                             <!-- Adds ${buildNumber} as an entry in the manifest file -->
-                            <Git-SHA-1>${buildNumber}</Git-SHA-1>
+                            <build-version>${buildNumber}</build-version>
                         </manifestEntries>
                     </archive>
                     <webResources>

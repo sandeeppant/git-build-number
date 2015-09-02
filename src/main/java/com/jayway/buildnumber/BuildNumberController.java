@@ -20,10 +20,10 @@ public class BuildNumberController {
      * Gets the Git SHA-1 and returns it as a JSON object.
      * @return A JSON object with the Git SHA-1 of the build.
      */
-    @RequestMapping(value = "/git-sha-1", produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/build-version", produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseBody
     public Map<String, String> getGitSha1() {
         String gitSha1 = PropertiesFileReader.getGitSha1();
-        return Collections.singletonMap("git-sha-1", gitSha1);
+        return Collections.singletonMap("build-version", gitSha1);
     }
 }

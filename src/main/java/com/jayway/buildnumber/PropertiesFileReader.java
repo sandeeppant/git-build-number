@@ -47,6 +47,6 @@ public class PropertiesFileReader {
      * @return A {@code String} with the Git SHA-1.
      */
     public static String getGitSha1() {
-        return properties.getProperty("git-sha-1");
+        return properties.getProperty("build-version");
     }
 }
