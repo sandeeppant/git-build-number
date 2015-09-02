@@ -113,6 +113,9 @@
                     <stopKey>foo</stopKey>
                     <stopPort>9999</stopPort>
                     <scanIntervalSeconds>5</scanIntervalSeconds>
+                    <httpConnector>
+                       <port>6060</port>
+                    </httpConnector>
                 </configuration>
             </plugin>
         </plugins>
